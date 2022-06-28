@@ -1,5 +1,6 @@
 // importing ...
 import express, { Response, Request } from 'express'
+import bcrypt from 'bcryptjs'
 import { PrismaClient } from "@prisma/client"
 
 // @ts-ignore
@@ -15,5 +16,10 @@ router.get("/register", async (res: Response, req: Request) => {
     }
     if (!plainTextPassword || typeof plainTextPassword !== 'string') {
         return res.json({ status: 'error', error: 'Invalid password' })
+    }
+
+    // Password length
+    if (plainTextPassword.length < 5) {
+        return res.json({ status: 'error', error: 'Password too small. Should be at least 6 characters.'})
     }
 })
