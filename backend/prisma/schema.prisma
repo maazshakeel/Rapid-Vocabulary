@@ -19,3 +19,10 @@ model User {
 }
 
 // Database of words
+model words {
+  id       Int    @id @default(autoincrement())
+  word     String @unique @db.VarChar(255)
+  meaning  String @db.VarChar(1000)
+  synonyms String @db.VarChar(1000)
+  sentence String @db.VarChar(1000)
+}
