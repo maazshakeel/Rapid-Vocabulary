@@ -22,4 +22,7 @@ router.get("/register", async (res: Response, req: Request) => {
     if (plainTextPassword.length < 5) {
         return res.json({ status: 'error', error: 'Password too small. Should be at least 6 characters.'})
     }
+
+    // hashing the password
+    const password = await bcrypt.hash(plainTextPassword, 37)
 })
