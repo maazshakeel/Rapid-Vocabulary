@@ -11,7 +11,7 @@ datasource db {
 }
 
 // User
-model User {
+model user {
   id       Int    @id @default(autoincrement())
   username String @unique @db.VarChar(255)
   email    String @db.VarChar(255)
