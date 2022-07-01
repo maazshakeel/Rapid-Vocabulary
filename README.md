@@ -20,3 +20,25 @@ So, there will be so many features that I've planned.
 - They can take a picture of the words written in the notebook and can easily add the words to the database and they’ll have the option to store all of the words in the database with suitable meanings. 
 
 - They can search for the meaning.
+
+### STACK
+- [ReactJS](https://reactjs.org) - A frontend framework to create interactive and beautifull user interfaces
+- [NodeJS](https://nodejs.org) - Node.js is an open-source, cross-platform, back-end JavaScript runtime environment
+- [ExpressJS](https://expressjs.com) - Express.js, or simply Express, is a back end web application framework for Node.js
+- [React Native](https://reactnative.dev) - ReactJS-based framework that can use native platform capabilities
+
+### Project structure
+
+```
+$PROJECT_ROOT
+├── packages           # Mobile And Web
+    └── mobile
+    ├── web   
+├── backend            # Backend
+    └── src
+        ├── app.ts     # Entry point
+        ├── prisma     # Prisma
+        ├── routes     # Routes
+        ├── utils      # helpers
+        └── assets     # Image files
+```
