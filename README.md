@@ -7,11 +7,16 @@ People can easily store and increase their vocabulary rapidly.
 
 So, there will be so many features that I've planned. 
 
-#### Let's discuss all of them:
+### Features:
 
-1. Their database of the words
-2. Sample database of very basic words
-3. A new word every day and they’ll have the option to add it to the database.
-4. They can set the goal yearly, monthly, weekly, and daily of how many words they gonna learn in a particular time according to the goal we’ll remind them of the goal and suggest some new words and books maybe.
-5. They can take a picture of the words written in the notebook and can easily add the words to the database and they’ll have the option to store all of the words in the database with suitable meanings. 
-6. They can search for the meaning.
+- Their own database of the words.
+
+- Sample database of very basic words.
+
+- A new word every day and they’ll have the option to add it to the database.
+
+- They can set the goal yearly, monthly, weekly, and daily of how many words they will gonna learn in a particular time according to the goal, and we’ll remind them of the goal and suggest some new words and books maybe.
+
+- They can take a picture of the words written in the notebook and can easily add the words to the database and they’ll have the option to store all of the words in the database with suitable meanings. 
+
+- They can search for the meaning.
