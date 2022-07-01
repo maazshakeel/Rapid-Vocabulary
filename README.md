@@ -1,4 +1,4 @@
-# Rapid-Vocabulary
+# Rapid-Vocabulary - Rapidly build your vocabulary
 
 #### How I got the idea?
 So I recently started focusing on English too much and the reason behind this is (will let you know very soon) and then I realized that I need words to speak so after if I started increasing my vocabulary so I started reading books :books: and others ways to increase my vocabulary but I learned So I recently started focusing on English too much and the reason behind this is (will let you know very soon) and then I realized that I need words to speak so after if I started increasing my vocabulary 15 words a day or no word all or 15 words a week. So from here, I get the idea of Rapid Vocabulary (will change the name later on :sweat_smile:)
@@ -24,6 +24,7 @@ So, there will be so many features that I've planned.
 ### STACK
 - [ReactJS](https://reactjs.org) - A frontend framework to create interactive and beautifull user interfaces
 - [NodeJS](https://nodejs.org) - Node.js is an open-source, cross-platform, back-end JavaScript runtime environment
+- [Tailwind CSS](tailwindcss.com) - Rapidly build modern websites
 - [ExpressJS](https://expressjs.com) - Express.js, or simply Express, is a back end web application framework for Node.js
 - [React Native](https://reactnative.dev) - ReactJS-based framework that can use native platform capabilities
 
