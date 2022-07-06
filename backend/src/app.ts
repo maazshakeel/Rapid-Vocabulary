@@ -1,5 +1,6 @@
 import express, { Response, Request } from 'express'
 import bcrypt from 'bcryptjs'
+// @ts-ignore
 import cors from 'cors'
 import { Prisma, PrismaClient } from "@prisma/client"
 
