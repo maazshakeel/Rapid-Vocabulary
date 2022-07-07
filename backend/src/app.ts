@@ -1,35 +1,42 @@
+// imports
+
+import dotenv from 'dotenv'
+dotenv.config()
+
 import express, { Response, Request } from 'express'
 import bcrypt from 'bcryptjs'
 // @ts-ignore
 import cors from 'cors'
+import bodyParser from 'body-parser'
 import { Prisma, PrismaClient } from "@prisma/client"
 
 // app
 const app = express()
 const prisma = new PrismaClient()
+const port = process.env.PORT || 3000
+const host = process.env.HOST || "localhost"
 
 // cors
-app.use(
-    cors({
-        origin: "*"
-    })
-)
+app.use(express.json())
+app.use(bodyParser.json())
 
 // users
 // app.use('/api/user', require('./routes/user.routes'))
 
 app.post("/api/register", async (res: Response, req: Request) => {
+
+    // debuging
+    console.log(req.body.username)
+    // destructering
     const { username, email, password: plainTextPassword } = req.body 
 
-    // validating if user filled the form
+    // validation
     if (!username || typeof username !== 'string') {
         return res.json({ status: 'error', error: 'Invalid username' })
     }
     if (!plainTextPassword || typeof plainTextPassword !== 'string') {
         return res.json({ status: 'error', error: 'Invalid password' })
     }
-
-    // Password length
     if (plainTextPassword.length < 5) {
         return res.json({ status: 'error', error: 'Password too small. Should be at least 6 characters.'})
     }
@@ -54,9 +61,10 @@ app.post("/api/register", async (res: Response, req: Request) => {
     .finally(async () => {
         await prisma.$disconnect()
     })
-    return res.json({ status: 'success', data: "Successfully added!"})
+    return res.json({ status: 'success', data: "User successfully registered!"})
 })
 
-app.listen(3000, () => {
-    console.log("Server running on http://localhost:3000")
+// @ts-ignore
+app.listen(port, host, () => {
+    console.log(`Server running on http://${host}:${port}`)
 })
